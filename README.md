@@ -6,6 +6,10 @@
 
 ## 1. What is the project?
 
+Hotel Management System is a desktop-based application that allows a
+hotel manager to handle all hotel activities e.g. manage various rooms,
+employee, drivers and customers.
+
 
 ## 2. Tech Stack:
 
