@@ -33,31 +33,42 @@ public class Dashboard extends JFrame{
 	NewLabel.setBounds(0, 0, 1950, 1000); 
         add(NewLabel);
         
-        JLabel AirlineManagementSystem = new JLabel("THE TAJ GROUP WELCOMES YOU");
-	AirlineManagementSystem.setForeground(Color.WHITE);
-        AirlineManagementSystem.setFont(new Font("Tahoma", Font.PLAIN, 46));
-	AirlineManagementSystem.setBounds(600, 60, 1000, 85);
-	NewLabel.add(AirlineManagementSystem);
+        // AirlineManagementSystem
+        
+        JLabel hotelManagementSystem = new JLabel("THE TAJ GROUP WELCOMES YOU");
+	hotelManagementSystem.setForeground(Color.WHITE);
+        hotelManagementSystem.setFont(new Font("Tahoma", Font.PLAIN, 46));
+	hotelManagementSystem.setBounds(600, 60, 1000, 85);
+	NewLabel.add(hotelManagementSystem);
 		
 		
         JMenuBar menuBar = new JMenuBar();
 	setJMenuBar(menuBar);
 		
-        JMenu AirlineSystem = new JMenu("HOTEL MANAGEMENT");
-        AirlineSystem.setForeground(Color.BLUE);
-	menuBar.add(AirlineSystem);
-		
-        JMenuItem FlightDetails = new JMenuItem("RECEPTION");
-	AirlineSystem.add(FlightDetails);
-		
-	JMenu AirlineSystemHello = new JMenu("ADMIN");
-        AirlineSystemHello.setForeground(Color.RED);
-	menuBar.add(AirlineSystemHello);
+        // AirlineSystem
         
-        JMenuItem FlightDetailshello1 = new JMenuItem("ADD EMPLOYEE");
-	AirlineSystemHello.add(FlightDetailshello1);
+        JMenu hotelSystem = new JMenu("HOTEL MANAGEMENT");
+        hotelSystem.setForeground(Color.BLUE);
+	menuBar.add(hotelSystem);
         
-        FlightDetailshello1.addActionListener(new ActionListener(){
+        // FlightDetails
+		
+        JMenuItem guestDetails = new JMenuItem("RECEPTION");
+	hotelSystem.add(guestDetails);
+        
+        // AirlineSystemHello
+		
+	JMenu hotelSystemHello = new JMenu("ADMIN");
+        hotelSystemHello.setForeground(Color.RED);
+	menuBar.add(hotelSystemHello);
+        
+        // FlightDetailshello1
+        
+        JMenuItem guestDetailshello1 = new JMenuItem("ADD EMPLOYEE");
+	hotelSystemHello.add(guestDetailshello1);
+        
+        
+        guestDetailshello1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 try{
                     new AddEmployee().setVisible(true);
@@ -65,11 +76,13 @@ public class Dashboard extends JFrame{
             }
 	});
         
-
-        JMenuItem FlightDetailshello2 = new JMenuItem("ADD ROOMS");
-	AirlineSystemHello.add(FlightDetailshello2);
         
-        FlightDetailshello2.addActionListener(new ActionListener(){
+        // FlightDetailshello2
+
+        JMenuItem hotelDetailshello2 = new JMenuItem("ADD ROOMS");
+	hotelSystemHello.add(hotelDetailshello2);
+        
+        hotelDetailshello2.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 try{
                     new AddRoom().setVisible(true);
@@ -77,18 +90,20 @@ public class Dashboard extends JFrame{
             }
 	});
         
+        // FlightDetails
 
-	FlightDetails.addActionListener(new ActionListener(){
+	guestDetails.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 new Reception();
             }
 	});
         
+        // FlightDetailshello3
         
-        JMenuItem FlightDetailshello3 = new JMenuItem("ADD DRIVERS");
-	AirlineSystemHello.add(FlightDetailshello3);
+        JMenuItem hotelDetailshello3 = new JMenuItem("ADD DRIVERS");
+	hotelSystemHello.add(hotelDetailshello3);
         
-	FlightDetailshello3.addActionListener(new ActionListener(){
+	hotelDetailshello3.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent ae){
                 try{
                     new AddDrivers().setVisible(true);
