@@ -55,14 +55,14 @@ public class Login extends JFrame implements ActionListener{
         b1.setFont(new Font("serif",Font.BOLD,15));
         b1.addActionListener(this);
         b1.setBackground(Color.BLACK);
-        b1.setForeground(Color.WHITE);
+        b1.setForeground(Color.BLACK);
         add(b1);
 
         b2=new JButton("Cancel");
         b2.setBounds(180,140,120,30);
         b2.setFont(new Font("serif",Font.BOLD,15));
         b2.setBackground(Color.BLACK);
-        b2.setForeground(Color.WHITE);
+        b2.setForeground(Color.BLACK);
         add(b2);
 
         b2.addActionListener(this);
