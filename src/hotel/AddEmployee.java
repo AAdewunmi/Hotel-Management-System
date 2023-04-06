@@ -21,8 +21,11 @@ public class AddEmployee extends JFrame{ //Third Frame
     
 	JTextField textField,textField_1,textField_2,textField_3,textField_4,textField_5,textField_6;
         JComboBox c1;
+        JButton b2;
+        
 
         public AddEmployee(){
+            
             getContentPane().setForeground(Color.BLUE);
             getContentPane().setBackground(Color.WHITE);
             setTitle("ADD EMPLOYEE DETAILS");
@@ -134,7 +137,6 @@ public class AddEmployee extends JFrame{ //Third Frame
             JLabel image = new JLabel(i2);
             image.setBounds(410,80,480,410);
             add(image);
-
             
             Next.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent ae){
