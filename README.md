@@ -1,10 +1,8 @@
-# $$\textcolor{red}{\text{UNDER CONSTRUCTION}}$$
-
 # Project Title:
 
-## Hotel Management System
+Hotel Management System
 
-## 1. What is the project?
+## 1. Project Description:
 
 Hotel Management System is a desktop-based application that allows a
 hotel manager to handle all hotel activities e.g. manage various rooms,
@@ -17,20 +15,85 @@ employee, drivers and customers.
 
 - MySQL
 
-- Dependencies:
+## 3. Project Dependencies:
 
-  mysql-connector-java-8.0.27.jar
+- mysql-connector-java-8.0.27.jar
   
-  rs2xml.jar
+- rs2xml.jar
 
-## 3. What is the MVP?
+## 4. Installation:
 
-## 4. What are the sprinkles? 
+i. Clone the git repo
 
-## 5. When will the project be complete? 
+```
+https://github.com/AAdewunmi/Hotel-Management-System.git
+```
 
-## 6. Adapted from: 
+ii. Open project folder
 
-URL: 
+iii. Explore
 
-## 7. License: MIT
+😎
+
+## 5. How To Use:
+
+i. Create Database and Tables (src/hotel/mysql_command.txt)
+
+ii. Run MySQL Server
+
+iii. Run HotelManagementSystem.java
+
+iv. Click next
+
+v. Log in 
+
+- User Name: admin
+
+- Password: 12345
+
+```
+
+NB: Make sure dependencies are installed for the project.
+```
+
+## 6. Demo
+
+- Landing Page:
+
+![This is an image](src/project_screenshot/landing_page.png)
+
+- Login Page:
+
+![This is an image](src/project_screenshot/login.png)
+
+- Hotel Management System Dashboard:
+
+![This is an image](src/project_screenshot/hms_dashboard.png)
+
+
+## 7. Contributing:
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
+## 8. Adapted From: 
+
+UDEMY: 45 Real World Java Development Projects Bootcamp Course 2022
+
+Java Programming Course: Learn Development Of JAVA Projects Using JSP,JDBC, Servlets, Swing, Spring Boot, Maven, Hibernate
+
+Project Name: Project 2: Hotel Management System
+
+Created by: Engineering.Org.In
+
+Last updated: 09/2022
+
+URL: https://www.udemy.com/course/java-programming-project-using-jsp-jdbc-servlets/
+
+
+
+
+
+
+
+
